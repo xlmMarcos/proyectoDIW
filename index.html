@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Recetas web</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="navbar">
+      <div class="contenedor-logo">
+        <img src="logo.png" alt="Logo" />
+        <a href="index.html" class="logo-text">Recetas Web</a>
+      </div>
+      <!-- Checkbox para activar el menú -->
+      <input type="checkbox" id="toggle-menu" class="toggle" hidden />
+      <label for="toggle-menu" class="boton-menu-desplegable">
+        <svg
+          width="90"
+          height="20"
+          viewBox="0 0 144 93"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 92.25V77H144V92.25H0ZM0 54.125V38.875H144V54.125H0ZM0 16V0.75H144V16H0Z"
+            fill="#FEF7FF"
+          />
+        </svg>
+      </label>
+      <!-- Menú desplegable horizontal -->
+      <div class="dropdown">
+        <a href="#recetas">RECETAS</a>
+        <a href="#postres">POSTRES</a>
+        <a href="#noticias">NOTICIAS</a>
+        <a href="#sobre-nosotros">SOBRE NOSOTROS</a>
+      </div>
+    </div>
+    <section class="carousel" aria-label="Gallery">
+      <ol class="carousel__viewport">
+        <li id="carousel__slide1" tabindex="0" class="carousel__slide">
+          <div class="carousel__snapper"></div>
+        </li>
+        <li id="carousel__slide2" tabindex="0" class="carousel__slide">
+          <div class="carousel__snapper"></div>
+        </li>
+        <li id="carousel__slide3" tabindex="0" class="carousel__slide">
+          <div class="carousel__snapper"></div>
+        </li>
+      </ol>
+      <aside class="carousel__navigation">
+        <ol class="carousel__navigation-list">
+          <li class="carousel__navigation-item">
+            <a href="#carousel__slide1" class="carousel__navigation-button"></a>
+          </li>
+          <li class="carousel__navigation-item">
+            <a href="#carousel__slide2" class="carousel__navigation-button"></a>
+          </li>
+          <li class="carousel__navigation-item">
+            <a href="#carousel__slide3" class="carousel__navigation-button"></a>
+          </li>
+        </ol>
+      </aside>
+    </section>
+    <section>
+      <div class="div-informacion-1">
+        <img src="" alt="" class="foto-info">
+        <div class="contenido-1">
+          <h3 class="titulo-1">INFORMACIÓN DETALLADA SOBRE CADA RECETA</h3>
+          <p class="texto-1">Cada receta cuenta con una descripcion de todos los ingredientes necesarios para realizar la receta además de una guia para poder cocinar de forma correcta.</p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
