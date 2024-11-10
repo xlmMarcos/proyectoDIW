@@ -288,6 +288,8 @@ li {
   max-width: 500px;
   height: 320px;
   border-radius: 20px;
+  animation: slideInFromLeft 2s ease forwards;
+
 }
 .contenido-1 {
   padding: 0px 10px;
@@ -299,6 +301,7 @@ li {
   background-color: gray;
   border-radius: 10px;
   border: 2px solid black;
+  animation: slideInFromRight 2s ease forwards;
 }
 .titulo-1 {
   text-align: center;
@@ -322,13 +325,15 @@ li {
 }
 .div-informacion-2 {
   width: 90%;
-  background-image: url(DALL·E\ 2024-11-09\ 22.48.33\ -\ A\ stylish\ and\ minimalist\ background\ image\ for\ promoting\ articles\,\ with\ soft\ neutral\ colors\,\ subtle\ textures\,\ and\ a\ clean\ design.\ The\ image\ should\ incl.webp);
   border: 2px solid black;
   border-radius: 10px;
+  animation: aparecer 5s;
+  background-color: #FBFAF6;
 }
 .titulo-2 {
   text-align: center;
   font-size: 30px;
+  background-color: #FFFBEA;
 }
 .texto-2 {
   text-align: center;
@@ -349,34 +354,145 @@ li {
 /* SECCION 3 */
 .section-3 {
   display: flex;
-  justify-content: space-around; /* Distribuye los elementos horizontalmente */
+  justify-content: space-around;
   align-items: center;
-  
+  overflow: hidden;
 }
 
 .parte3-1,
+.parte3-2,
+.parte-medio {
+  opacity: 0; /* Inicia oculto para un efecto de entrada */
+}
+
+/* Animación de entrada de parte3-1 desde la izquierda */
+.parte3-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 50px 0px;
+  animation: slideInFromLeft 1s ease forwards;
+  animation-delay: 0.5s;
+}
+
+/* Animación de entrada de parte3-2 desde la derecha */
 .parte3-2 {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   padding: 50px 0px;
+  animation: slideInFromRight 1s ease forwards;
+  animation-delay: 0.5s;
+}
+
+/* Animación de entrada de parte-medio desde abajo */
+.parte-medio {
+  width: 2px;
+  height: 90%;
+  background-color: #000;
+  animation: slideInFromBottom 1s ease forwards;
+  animation-delay: 1s;
 }
 
 .titulo3-1, .titulo3-2 {
   width: fit-content;
-  margin-bottom: 10px; /* Espacio entre el título y la imagen */
+  margin-bottom: 10px;
 }
 
 .imagen3-1, .imagen3-2 {
-  width: 300px; /* Ajusta el tamaño según necesites */
-  height: auto;
+  width: 450px;
+  height: 300px;
   border-radius: 10px;
+  overflow: hidden;
+  max-width: 500px;
 }
 
-.parte-medio {
-  width: 2px; /* Ancho de la línea divisoria */
-  height: 90%; /* Altura de la línea */
-  background-color: #000; /* Color de la línea */
+/* Animaciones */
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%); /* Inicia desde fuera de la pantalla a la izquierda */
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0); /* Llega a su posición final */
+    opacity: 1;
+  }
 }
 
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(100%); /* Inicia desde fuera de la pantalla a la derecha */
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0); /* Llega a su posición final */
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromBottom {
+  from {
+    transform: translateY(100%); /* Inicia desde fuera de la pantalla en la parte inferior */
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0); /* Llega a su posición final */
+    opacity: 1;
+  }
+}
+@keyframes aparecer {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #8FA07D;
+  padding: 10px 20px;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+}
+
+.footer-logo i {
+  font-size: 30px;
+  margin-right: 5px;
+}
+
+.footer-logo span {
+  font-weight: bold;
+}
+
+.footer-follow {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.footer-icons {
+  display: flex;
+  align-items: center;
+}
+
+.footer-icons i {
+  font-size: 24px;
+  margin: 0 10px;
+  color: #fff;
+}
+
+.divider {
+  margin: 0 5px;
+  font-size: 18px;
+  font-weight: bold;
+}
