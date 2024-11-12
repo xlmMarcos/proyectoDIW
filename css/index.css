@@ -129,19 +129,19 @@ li {
   height: 100%; /* Adaptar a la altura completa */
 }
 .carousel__slide:nth-child(1) {
-  background-image: url("1slider.png"); /* Asegúrate de poner la ruta correcta de la imagen */
+  background-image: url("/imagenes/1slider.png"); /* Asegúrate de poner la ruta correcta de la imagen */
   background-size: cover; /* Asegura que la imagen cubra toda la diapositiva */
   background-position: center; /* Centra la imagen dentro de la diapositiva */
   background-repeat: no-repeat; /* Evita que la imagen se repita si es más pequeña que la diapositiva */
 }
 .carousel__slide:nth-child(2) {
-  background-image: url("2slider.png"); /* Asegúrate de poner la ruta correcta de la imagen */
+  background-image: url("/imagenes/2slider.png"); /* Asegúrate de poner la ruta correcta de la imagen */
   background-size: cover; /* Asegura que la imagen cubra toda la diapositiva */
   background-position: center; /* Centra la imagen dentro de la diapositiva */
   background-repeat: no-repeat; /* Evita que la imagen se repita si es más pequeña que la diapositiva */
 }
 .carousel__slide:nth-child(3) {
-  background-image: url("1slider.png"); /* Asegúrate de poner la ruta correcta de la imagen */
+  background-image: url("/imagenes/1slider.png"); /* Asegúrate de poner la ruta correcta de la imagen */
   background-size: cover; /* Asegura que la imagen cubra toda la diapositiva */
   background-position: center; /* Centra la imagen dentro de la diapositiva */
   background-repeat: no-repeat; /* Evita que la imagen se repita si es más pequeña que la diapositiva */
@@ -277,7 +277,6 @@ li {
   width: fit-content;
 
   height: 300px;
-  background-color: ;
   display: flex;
   justify-content: inline;
   align-items: center;
@@ -288,7 +287,6 @@ li {
   height: 320px;
   border-radius: 20px;
   animation: slideInFromLeft 2s ease forwards;
-
 }
 .contenido-1 {
   padding: 0px 10px;
