@@ -355,7 +355,7 @@ h1 {
 }
 
 .card {
-  background-color: #fff;
+  background-color: #F4F8F1;
   border-radius: 15px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   overflow: hidden;
@@ -380,6 +380,7 @@ h1 {
   justify-content: space-around;
   font-size: 14px;
   margin: 10px 0;
+  background-color: #FDF3ED;
 }
 
 .card .details div {
