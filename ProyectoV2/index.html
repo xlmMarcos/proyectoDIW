@@ -19,6 +19,7 @@
     <link rel="icon" href="./imagenes/logo.png" type="image/x-icon" />
   </head>
   <body>
+    <!--------------------------HEADER Y NAV -------------------------------->
     <header>
       <div class="logo-container">
         <a href="./index.html"
@@ -28,7 +29,7 @@
       </div>
       <nav>
         <ul class="menu">
-          <li><a href="./index.html">Inicio</a></li>
+          <li><a href="./index.html">INICIO</a></li>
           <li>
             <a href="#">RECETAS</a>
             <ul class="submenu">
@@ -41,6 +42,8 @@
         </ul>
       </nav>
     </header>
+
+    <!----------------------------CARRUSEL------------------------------------------->
     <div class="carrusel">
       <!-- Radio buttons -->
       <input type="radio" id="slide1" name="carousel" checked />
@@ -52,7 +55,7 @@
         <!-- Slide 1 -->
         <div class="slide">
           <div class="image">
-            <img src="./imagenes/logo.png" alt="Imagen 1" />
+            <img src="./imagenes/SaludableBaner.jpg" alt="Imagen 1" />
           </div>
           <div class="text">
             <h2>Alimenta tu Bienestar</h2>
@@ -73,10 +76,7 @@
         <!-- Slide 2 -->
         <div class="slide">
           <div class="image">
-            <img
-              src="https://via.placeholder.com/400x300?text=Recetas+Nutritivas"
-              alt="Imagen 2"
-            />
+            <img src="./imagenes/BannerRecetas.jpg" alt="Imagen 2" />
           </div>
           <div class="text">
             <h2>Recetas Nutritivas</h2>
@@ -97,10 +97,7 @@
         <!-- Slide 3 -->
         <div class="slide">
           <div class="image">
-            <img
-              src="https://via.placeholder.com/400x300?text=Estilo+de+Vida+Saludable"
-              alt="Imagen 3"
-            />
+            <img src="./imagenes/VidaSaludableBannear.jpg" alt="Imagen 3" />
           </div>
           <div class="text">
             <h2>Estilo de Vida Saludable</h2>
@@ -125,24 +122,31 @@
       <div class="menu-info">
         <div class="menu-header">MENÚ DEL DÍA</div>
         <div class="menu-description">
-          Recetas saludables y deliciosas para tu menú diario, fáciles de
-          preparar en casa.
+          <p>
+            Descubre nuestro Menú del Día, diseñado para ofrecerte una
+            experiencia culinaria saludable y deliciosa. <br />
+            <br />Nuestras recetas del día están pensadas para que comer bien
+            sea fácil y sabroso.
+          </p>
+          <p>¡¡PREPARA Y DISFRUTA!!</p>
         </div>
       </div>
       <div class="menu-items">
         <div class="menu-item">
-          <img
-            src="https://via.placeholder.com/200?text=Sopa+de+Verduras"
-            alt="Sopa de verduras con albóndigas de pollo"
-          />
-          <p>Sopa de verduras con albóndigas de pollo</p>
+          <a href="index.html"
+            ><img
+              src="./imagenes/sopaVerduras.jpg"
+              alt="Sopa de verduras con albóndigas de pollo"
+          /></a>
+          <a href="index.html"
+            ><p>Sopa de verduras con albóndigas de pollo</p></a
+          >
         </div>
         <div class="menu-item">
-          <img
-            src="https://via.placeholder.com/200?text=Flan+de+Caramelo"
-            alt="Flan de caramelo casero"
-          />
-          <p>Flan de caramelo casero</p>
+          <a href="index.html"
+            ><img src="./imagenes/Flan.webp" alt="Flan de caramelo casero"
+          /></a>
+          <a href="index.html"><p>Flan de caramelo casero</p></a>
         </div>
       </div>
     </div>
@@ -151,8 +155,8 @@
     <h1>TIENES QUE PROBARLO</h1>
     <div class="cards-container">
       <div class="card">
-        <img src="https://via.placeholder.com/300x200" alt="Ensalada de Quinoa">
-        <h3>Ensalada de Quinoa con Aguacate, Garbanzos y Verduras.</h3>
+        <img src="./imagenes/EnsaladaQuinoa.jfif" alt="Ensalada de Quinoa" />
+        <h3>Ensalada de Quinoa</h3>
         <div class="details">
           <div>380 kcal</div>
           <div>9.8 g proteínas</div>
@@ -162,7 +166,7 @@
         <button>VER</button>
       </div>
       <div class="card">
-        <img src="https://via.placeholder.com/300x200" alt="Flan de caramelo">
+        <img src="./imagenes/Flan.webp" alt="Flan de caramelo" />
         <h3>Flan de caramelo casero</h3>
         <div class="details">
           <div>380 kcal</div>
@@ -173,8 +177,19 @@
         <button>VER</button>
       </div>
       <div class="card">
-        <img src="https://via.placeholder.com/300x200" alt="Croquetas de queso">
+        <img src="./imagenes/croquetasQueso.jpg" alt="Croquetas de queso" />
         <h3>Croquetas de queso y calabacín</h3>
+        <div class="details">
+          <div>380 kcal</div>
+          <div>9.8 g proteínas</div>
+          <div>47 g carbohidratos</div>
+          <div>17.5 g grasas</div>
+        </div>
+        <button>VER</button>
+      </div>
+      <div class="card">
+        <img src="./imagenes/TartaTiramisu.jfif" alt="Tarta tiramisú" />
+        <h3>Tarta de queso tiramisú</h3>
         <div class="details">
           <div>380 kcal</div>
           <div>9.8 g proteínas</div>
@@ -188,6 +203,7 @@
       <button>VER LAS RECETAS</button>
       <button>VER LOS POSTRES</button>
     </div>
+
     <!-- Footer -->
     <footer class="footer">
       <div class="footer-left">

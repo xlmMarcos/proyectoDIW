@@ -1,6 +1,6 @@
 /* Estilos generales */
 body {
-  font-family: Arial, sans-serif;
+  font-family: helvetica, sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -17,6 +17,7 @@ header {
   align-items: center;
   padding: 10px 20px;
   box-shadow: 0 4px 6px rgba(146, 168, 133, 0.3); /* Sombra en el header */
+  font-family: "Gorditas";
 }
 
 .logo-container {
@@ -101,70 +102,18 @@ nav ul li:hover > .submenu {
 }
 /*------------------------------------------------------------------------------------------------*/
 
-/* ---------------------------------Estilos para el footer -------------------------------------- */
-.footer {
-  background-color: #92a885; /* Color de fondo del footer */
-  color: white;
-  display: flex;
-  justify-content: space-between; /* Alinear los elementos a los lados */
-  padding: 20px;
-  align-items: center; /* Alineación vertical de los elementos */
-  box-shadow: 0 -4px 10px rgba(146, 168, 133, 0.3); /* Sombra sobre el footer */
-}
-
-.footer-left {
-  display: flex;
-  align-items: center;
-}
-
-.logo-footer {
-  width: 50px; /* Tamaño del logo */
-  height: auto;
-  margin-right: 10px; /* Espacio entre el logo y el nombre */
-}
-
-.website-name-footer {
-  font-size: 16px;
-  margin: 0;
-  text-decoration: none;
-  color: white;
-}
-
-.footer-right {
-  display: flex;
-  gap: 20px; /* Espacio entre los iconos */
-}
-
-.social-icon {
-  font-size: 30px; /* Tamaño de los iconos */
-  color: white; /* Color de los iconos */
-  text-decoration: none; /* Eliminar subrayado */
-  transition: color 0.3s ease; /* Transición suave al pasar el ratón */
-}
-
-.social-icon:hover {
-  color: #acc59e; /* Color al pasar el ratón */
-}
-/* carrusel */
-/* Estilos generales */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
 /* Carrusel */
 .carrusel {
   position: relative;
   width: 90%;
-  max-width: 1200px;
+  max-width: 67%;
   height: 350px;
   display: flex;
   border: 2px solid #ccc;
   border-radius: 10px;
   overflow: hidden;
   background-color: white;
-  margin: auto;
+  margin: 60px auto;
 }
 
 .slides {
@@ -179,12 +128,9 @@ body {
 
 /* Columna izquierda (imagen) */
 .slide .image {
-  width: 60%;
+  width: 80%;
   background-color: #f1f1f1;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
 }
 
 .slide .image img {
@@ -195,25 +141,27 @@ body {
 
 /* Columna derecha (texto y botones) */
 .slide .text {
-  width: 40%;
+  width: 30%;
   padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  align-items: left;
+  background-color: #f4f8f1;
 }
 
 .slide .text h2 {
+  font-family: "Gorditas", cursive;
   font-size: 20px;
   margin-bottom: 10px;
-  text-align: center;
+  text-align: left;
 }
 
 .slide .text p {
   font-size: 16px;
   color: #555;
   margin-bottom: 20px;
-  text-align: center;
+  text-align: left;
 }
 
 .slide .text button {
@@ -273,23 +221,25 @@ input[type="radio"] {
 #slide3:checked ~ .slide .controls label[for="slide3"] {
   background-color: #333;
 }
-/* ZONA MENU DEL DIA -------------- */
+
+/*----------------- ZONA MENU DEL DIA -------------- */
 .menu-container {
-  background-color: white;
+  /* Contenedor general de la seccion de la web */
+  background-color: #fbfaf6;
   width: 85%; /* Ajustamos el ancho al 85% */
-  max-width: 1200px;
+  max-width: 65%;
   border: 1px solid #ccc;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  margin: 20px auto; /* Centrado */
+  margin: 60px auto; /* Centrado */
   position: relative; /* Necesario para que el texto se posicione relativo al contenedor */
   display: flex;
   justify-content: space-between; /* Mantiene los elementos separados */
-  align-items: center; /* Alineación vertical */
 }
 
 .menu-header {
+  /*  Titulo de la seccion  */
   font-family: "Gorditas", serif;
   font-size: 20px;
   font-weight: bold;
@@ -304,16 +254,22 @@ input[type="radio"] {
 }
 
 .menu-info {
+  /* MENU DE DESCRIPCION DE LA SECCION */
   flex: 0 0 35%; /* La sección de texto ocupa el 35% del ancho del contenedor */
+  vertical-align: top;
 }
 
-.menu-description {
-  font-size: 16px;
-  color: #555;
-  margin-top: 10px;
+.menu-description p {
+  font-family: "Italiana";
+  font-size: 22px;
+  color: #333;
+  font-weight: lighter;
+  font-style: oblique;
+  text-align: left;
 }
 
 .menu-items {
+  /* CONTENEDOR DE CADA RECETA DEL DIA */
   flex: 0 0 60%; /* La sección de imágenes ocupa el 60% del ancho */
   display: flex;
   justify-content: space-between;
@@ -331,14 +287,19 @@ input[type="radio"] {
   margin-bottom: 10px;
 }
 
-.menu-item p {
+.menu-item a,
+p {
+  font-family: "helvetica";
   font-size: 14px;
   color: #333;
   font-weight: bold;
+  text-decoration: none;
 }
-/* TIENES QUE PROBARLO */
+/* ----------------------------------------SECCION TIENES QUE PROBARLO -----------------------------------*/
+
 h1 {
-  font-family: 'Gorditas', cursive;
+  /* Titulo de la seccion */
+  font-family: "Gorditas", cursive;
   font-size: 36px;
   margin: 20px 0;
   color: #333;
@@ -346,6 +307,7 @@ h1 {
 }
 
 .cards-container {
+  /* Contenedor general*/
   display: flex;
   justify-content: center;
   gap: 20px;
@@ -355,7 +317,8 @@ h1 {
 }
 
 .card {
-  background-color: #F4F8F1;
+  /* Cada contenedor individual */
+  background-color: #f4f8f1;
   border-radius: 15px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   overflow: hidden;
@@ -364,23 +327,29 @@ h1 {
 }
 
 .card img {
+  /* Las imagenes del contenedor */
   width: 100%;
   height: 200px;
   object-fit: cover;
 }
 
 .card h3 {
+  /* Los titulos de cada plato de cada contenedor individual */
+  font-family: "helvetica";
   font-size: 18px;
   margin: 10px 0;
   color: #333;
 }
 
 .card .details {
+  /* Detalles del plato o postre, KCAL PROTEINAS ETC */
   display: flex;
   justify-content: space-around;
   font-size: 14px;
-  margin: 10px 0;
-  background-color: #FDF3ED;
+  margin: 3%;
+  background-color: #fdf3ed;
+  border-radius: 15%; /* Redondea las esquinas */
+  border: 1px solid #f1eae6;
 }
 
 .card .details div {
@@ -388,6 +357,7 @@ h1 {
 }
 
 .card button {
+  /* Cada boton que muestra el contenido de la receta */
   background-color: #ffa07a;
   width: 90%;
   border: none;
@@ -397,7 +367,7 @@ h1 {
   font-size: 16px;
   color: white;
   cursor: pointer;
-  font-family: 'Gorditas', cursive;
+  font-family: "Gorditas", cursive;
   transition: background-color 0.3s;
 }
 
@@ -419,11 +389,58 @@ h1 {
   padding: 10px 20px;
   font-size: 16px;
   color: white;
-  font-family: 'Gorditas', cursive;
+  font-family: "Gorditas", cursive;
   cursor: pointer;
   transition: background-color 0.3s;
 }
 
 .buttons-container button:hover {
   background-color: #ff7f50;
+}
+/*----------------------------------------------------------------------------------------------- */
+
+/* ---------------------------------Estilos para el footer -------------------------------------- */
+.footer {
+  background-color: #92a885; /* Color de fondo del footer */
+  color: white;
+  display: flex;
+  justify-content: space-between; /* Alinear los elementos a los lados */
+  padding: 20px;
+  align-items: center; /* Alineación vertical de los elementos */
+  box-shadow: 0 -4px 10px rgba(146, 168, 133, 0.3); /* Sombra sobre el footer */
+  font-family: "Gorditas";
+}
+
+.footer-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo-footer {
+  width: 50px; /* Tamaño del logo */
+  height: auto;
+  margin-right: 10px; /* Espacio entre el logo y el nombre */
+}
+
+.website-name-footer {
+  font-size: 16px;
+  margin: 0;
+  text-decoration: none;
+  color: white;
+}
+
+.footer-right {
+  display: flex;
+  gap: 20px; /* Espacio entre los iconos */
+}
+
+.social-icon {
+  font-size: 30px; /* Tamaño de los iconos */
+  color: white; /* Color de los iconos */
+  text-decoration: none; /* Eliminar subrayado */
+  transition: color 0.3s ease; /* Transición suave al pasar el ratón */
+}
+
+.social-icon:hover {
+  color: #acc59e; /* Color al pasar el ratón */
 }
