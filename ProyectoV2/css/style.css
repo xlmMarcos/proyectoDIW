@@ -10,28 +10,31 @@ body {
 /*-----------------------------------HEADER Y NAV--------------------------------------------*/
 
 header {
-  background-color: #92a885;
-  color: white;
-  display: flex;
+  background-color: #92a885; /*Color de fondo */
+  color: white; /*  Color de la letras en el contenedor header */
+  display: flex; /* Disposicion de los contenedores internos del header */
   justify-content: space-between;
-  align-items: center;
+  align-items: center; /* disposicion de los elementos */
   padding: 10px 20px;
   box-shadow: 0 4px 6px rgba(146, 168, 133, 0.3); /* Sombra en el header */
-  font-family: "Gorditas";
+  font-family: "Gorditas"; /* Fuente de la letra */
 }
 
 .logo-container {
+  /* Estilo del contenedor del logotipo */
   display: flex;
   align-items: center;
 }
 
 .logo {
+  /* Estilo del logo */
   width: 80px; /* Tamaño del logo */
   height: auto;
   margin-right: 10px; /* Espacio entre el logo y el nombre */
 }
 
 .website-name {
+  /* Estilo del nombre de la web */
   font-size: 24px;
   margin: 0;
   text-decoration: none;
