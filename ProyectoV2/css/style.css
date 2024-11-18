@@ -226,16 +226,16 @@ input[type="radio"] {
 .menu-container {
   /* Contenedor general de la seccion de la web */
   background-color: #fbfaf6;
-  width: 85%; /* Ajustamos el ancho al 85% */
+  width: 85%; 
   max-width: 65%;
   border: 1px solid #ccc;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  margin: 60px auto; /* Centrado */
-  position: relative; /* Necesario para que el texto se posicione relativo al contenedor */
+  margin: 60px auto; 
+  position: relative; 
   display: flex;
-  justify-content: space-between; /* Mantiene los elementos separados */
+  justify-content: space-between; 
 }
 
 .menu-header {
@@ -247,15 +247,15 @@ input[type="radio"] {
   background-color: white;
   border: 2px solid #333;
   border-radius: 5px;
-  position: absolute; /* Posición absoluta para superponer */
-  top: -15px; /* Ajusta la posición hacia arriba */
-  left: -0px; /* Hace que sobresalga un poco del contenedor */
-  z-index: 10; /* Se asegura de que esté por encima del contenedor */
+  position: absolute; 
+  top: -15px; 
+  left: -0px; 
+  z-index: 10; 
 }
 
 .menu-info {
   /* MENU DE DESCRIPCION DE LA SECCION */
-  flex: 0 0 35%; /* La sección de texto ocupa el 35% del ancho del contenedor */
+  flex: 0 0 35%;
   vertical-align: top;
 }
 
@@ -270,19 +270,19 @@ input[type="radio"] {
 
 .menu-items {
   /* CONTENEDOR DE CADA RECETA DEL DIA */
-  flex: 0 0 60%; /* La sección de imágenes ocupa el 60% del ancho */
+  flex: 0 0 60%; 
   display: flex;
   justify-content: space-between;
 }
 
 .menu-item {
   text-align: center;
-  width: 48%; /* Las imágenes ocupan el 48% del espacio disponible */
+  width: 48%; 
 }
 
 .menu-item img {
   width: 100%;
-  max-width: 200px; /* Tamaño máximo de las imágenes */
+  max-width: 200px; 
   border-radius: 10px;
   margin-bottom: 10px;
 }
@@ -348,7 +348,7 @@ h1 {
   font-size: 14px;
   margin: 3%;
   background-color: #fdf3ed;
-  border-radius: 15%; /* Redondea las esquinas */
+  border-radius: 15%; 
   border: 1px solid #f1eae6;
 }
 
@@ -401,13 +401,13 @@ h1 {
 
 /* ---------------------------------Estilos para el footer -------------------------------------- */
 .footer {
-  background-color: #92a885; /* Color de fondo del footer */
+  background-color: #92a885; 
   color: white;
   display: flex;
-  justify-content: space-between; /* Alinear los elementos a los lados */
+  justify-content: space-between;
   padding: 20px;
-  align-items: center; /* Alineación vertical de los elementos */
-  box-shadow: 0 -4px 10px rgba(146, 168, 133, 0.3); /* Sombra sobre el footer */
+  align-items: center;
+  box-shadow: 0 -4px 10px rgba(146, 168, 133, 0.3); 
   font-family: "Gorditas";
 }
 
@@ -417,9 +417,9 @@ h1 {
 }
 
 .logo-footer {
-  width: 50px; /* Tamaño del logo */
+  width: 50px; 
   height: auto;
-  margin-right: 10px; /* Espacio entre el logo y el nombre */
+  margin-right: 10px; 
 }
 
 .website-name-footer {
@@ -431,16 +431,16 @@ h1 {
 
 .footer-right {
   display: flex;
-  gap: 20px; /* Espacio entre los iconos */
+  gap: 20px; 
 }
 
 .social-icon {
-  font-size: 30px; /* Tamaño de los iconos */
-  color: white; /* Color de los iconos */
-  text-decoration: none; /* Eliminar subrayado */
-  transition: color 0.3s ease; /* Transición suave al pasar el ratón */
+  font-size: 30px; 
+  color: white; 
+  text-decoration: none; 
+  transition: color 0.3s ease; 
 }
 
 .social-icon:hover {
-  color: #acc59e; /* Color al pasar el ratón */
+  color: #acc59e; 
 }
